@@ -5,6 +5,10 @@
     "main": "./src/App.js",
     "author": "Scott DePalma",
     "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sdepalma/react-gulp-boilerplate.git"
+    },
     "dependencies": {
         "fbjs": "^0.8.16",
         "jquery": "^3.3.1",
