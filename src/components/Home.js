@@ -1,4 +1,5 @@
 import React from 'react';
+import sha256 from 'crypto-js/sha256';
 import Logger from './utils/Logger';
 import { shuffle } from './utils/Helper';
 
@@ -9,6 +10,11 @@ class Home extends React.Component {
         let shuffledArray = shuffle(["1", "2", "3"]);
         logger.log("shuffledArray", shuffledArray);
 
+        const ppid = "00u5006jbYG1SRHUH356";
+        const hash = sha256(ppid);
+        logger.log(`hash: ${hash.toString()}`);
+        // const hmacDigest = Base64.stringify(hmacSHA512(path + hashDigest, privateKey));
+
         return (
             <div id="home-container" className="container">
                 <header>
@@ -16,6 +22,8 @@ class Home extends React.Component {
                 </header>
                 <div id="home-content" className="page">
                     <p>Content</p>
+                    <p>PPID: {ppid}</p>
+                    <p>SHA256: {hash.toString()}</p>
                 </div>
             </div>
         );
