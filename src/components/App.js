@@ -6,24 +6,23 @@ import Page from './Page';
 
 const App = () => (
     <Router>
-        <div id="main">
+        <div className="container">
             <header>
-                <h1>React/Gulp Boilerplate</h1>
+                <div id="dss-logo">
+                    <img src='/images/dss-logo.png' />
+                </div>
+                <h1>Chromecast Test Sender</h1>
             </header>
+
             <nav>
                 <ul>
-                    <li>
-                        <NavLink exact={true} activeClassName='active' to='/'>
-                            Home
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink exact={true} activeClassName='active' to='/page'>
-                            Page
-                        </NavLink>
-                    </li>
+                    <li>Application ID</li>
+                    <li>Manifest & License</li>
+                    <li className="active">Content</li>
+                    <li>Media Controls</li>
                 </ul>
             </nav>
+
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/page' component={Page} />
