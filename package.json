@@ -23,7 +23,7 @@
         "browserify": "^14.0.0",
         "browserify-resolutions": "^1.1.0",
         "fbjs": "^0.8.9",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.2",
         "gulp-concat": "^2.6.1",
         "gulp-connect": "^5.0.0",
         "gulp-eslint": "^3.0.1",
